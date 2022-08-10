@@ -31,21 +31,19 @@
         <label class="form_field">
           How old are You?
           <input
-          type="text"
+          type="number"
           name="age"
           min="1"
           max="100"
           value="12"
-          maxlength="2"
-          size="6"
           >
         </label>
         <label class="form_field">
           Full date of birth:
           <input type="date" name="birthdate">
         </label>
-        <label class="form_field">
-          I accept the term of agreement
+        <label name="terms">
+          I accept the term of the agreement
           <input type="checkbox" name="terms">
         </label>
       </fieldset>
@@ -59,7 +57,7 @@
           required
           >
         </label>
-        <label class="form_field">
+        <label name="password">
           Password:
           <input type="password" name="password">
         </label>
@@ -99,7 +97,7 @@
             <option value="Lada">Lada</option>
           </select>
         </label>
-        <label class="form_field">
+        <label name="rate">
           How do you rate our work?
           <input
           type="range"
@@ -113,9 +111,9 @@
         <legend>Additional info:</legend>
         <label class="form_field">
           Comments:
-          <textarea name="textarea" cols="10" rows="2"></textarea>
+          <textarea name="textarea"></textarea>
         </label>
-        <label class="form_field">
+        <label name="rec">
           Would you recommend us?
           <select name="recommend">
             <option value="yes">yes</option>
